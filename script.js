@@ -1,21 +1,13 @@
-window.onload = function () {
-    // alert('onload');
-    myFunction();
-    calculateArea();
-}
-window.onerror = function (message, url, line) {
-    alert(message + ', ' + url + ', ' + line);
-};
-
 function myFunction() {
-    let name = getQueryVariable("name");
-    let partnername = getQueryVariable("partnername");
-    let location = getQueryVariable("location");
-    let designation = getQueryVariable("designation");
-    let company = getQueryVariable("company");
-    if (name && partnername && location && designation && company) {
-        name = name.replace('+', ' ');
-        document.getElementById("loginData").innerHTML = 'Hi I am ' + name + 'and my partners name is ' + partnername + ' . I stay in ' + location + ' .I am working as ' + designation + ' in ' + company;
+    let name = document.getElementById("name");
+    let partnername = document.getElementById("partnername");
+    let location = document.getElementById("location");
+    let designation = document.getElementById("designation");
+    let company = document.getElementById("company");
+    alert(company.value);
+    if (name.value && partnername.value && location.value && designation.value && company.value) {
+        //name = name.replace('+', ' ');
+        document.getElementById("loginData").innerHTML = 'Hi I am ' + name.value + 'and my partners name is ' + partnername.value + ' . I stay in ' + location.value + ' .I am working as ' + designation.value + ' in ' + company.value;
     }
 }
 function implementforinLoop() {
@@ -75,22 +67,14 @@ function implementForLoop() {
 
 }
 function calculateArea() {
-    let sideA = getQueryVariable("sideA")
-    let sideB = getQueryVariable("sideB");
-    let sideC = getQueryVariable("sideC");
-    if (sideA && sideB && sideC) {
-        let semiPeri = (sideA + sideB + sideC) / 2;
-        let areaValue = Math.sqrt(
-            semiPeri * (semiPeri - sideA) * (semiPeri - sideB) * (semiPeri - sideC)
-        );
-
-        document.getElementById("displayArea").innerHTML = 'Area of the traiangle :' + areaValue;
+    let Base = document.getElementById('Base');
+    let Height = document.getElementById('Height');
+    if (Base && Height) {
+        let areaValue = (Base.value * Height.value) / 2;
+        document.getElementById("triangleArea").innerHTML = 'Area of the triangle :' + areaValue;
     }
-
-
-
 }
-function getQueryVariable(variable) {
+/*function getQueryVariable(variable) {
     let query = window.location.search.substring(1);
     let vars = query.split("&");
     for (let i = 0; i < vars.length; i++) {
@@ -99,9 +83,24 @@ function getQueryVariable(variable) {
             return pair[1];
         }
     }
+}*/
+
+function calculateValues() {
+    if (document.getElementsByClassName('btn').clicked == true) {
+        alert("button was clicked");
+
+        // let a = 
+        // alert(a);
+
+        //let sideA = document.getElementsByTagName(HTMLButtonElement);
+
+        // alert(sideA);
+    }
 }
 
-//
+
+
+
 
 
 

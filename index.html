@@ -37,7 +37,7 @@
 
     <div class="divStyle">
 
-        <form action="workout.html" method="GET">
+        <form>
 
             <table>
                 <tr>
@@ -61,74 +61,69 @@
                     <td> <input type="text" name="company" id="company"> </td>
                 </tr>
                 <tr>
-                    <td> <input type="submit" value=" Submit"> </td>
+                    <td> <input type="button" value=" Submit" onclick="myFunction()"> </td>
                 </tr>
             </table>
-
+            <span id='loginData'> </span>
 
         </form>
 
     </div>
     <div class="divStyle">
-        <form action="workout.html" method="GET">
+        <form>
 
             <table>
                 <tr>
-                    <td> <label for="sideA">sideA:</label></td>
-                    <td>  <input type="text" name="sideA" id="sideA">  </td>
+                    <td> <label for="Base">Base:</label></td>
+                    <td>  <input type="text" id="Base">  </td>
                 </tr>
                 <tr>
-                    <td> <label for="sideB">sideB:</label> </td>
-                    <td> <input type="text" name="sideB" id="sideA"> </td>
+                    <td> <label for="Height">Height:</label> </td>
+                    <td> <input type="text" id="Height"> </td>
                 </tr>
                 <tr>
-                    <td> <label for="sideC">sideC:</label>  </td>
-                    <td><input type="text" name="sideC" id="sideC"></td>
-                </tr>
-
-                <tr>
-                    <td> <input type="submit" value=" Submit"> </td>
+                    <td> <input type="button" value=" Submit" onclick="calculateArea()" /> </td>
                 </tr>
             </table>
-
-
         </form>
-
+        <span id='triangleArea'> </span>
     </div>
+
+
     <div class="calculator">
-        <form action="workout.html" method="GET">
+        <table>
+            <tr>
+                <td> <input type="text" name="space" id="space" /></td>
+            </tr>
+            <tr>
+                <td> <input type="button" value=" 1" class="btn" /></td>
+                <td> <input type="button" value=" 2" class="btn" /> </td>
+                <td> <input type="button" value=" 3" class="btn" /></td>
+                <td> <input type="button" value=" 4" class="btn" /> </td>
 
-            <table>
-                <tr>
-                    <td> <input type="text" name="space" id="space" /></td>
-                </tr>
-                <tr>
-                    <td> <input type="button" value=" 1" /></td>
-                    <td> <input type="button" value=" 2" /> </td>
-                    <td> <input type="button" value=" 3" /></td>
-                    <td> <input type="button" value=" 4" /> </td>
-                    <td> <input type="button" value=" 5" /> </td>
-                </tr>
-                <tr>
-                    <td> <input type="button" value=" 6" /> </td>
-                    <td> <input type="button" value=" 7" /> </td>
-                    <td> <input type="button" value=" 8" /> </td>
-                    <td> <input type="button" value=" 9" /> </td>
-                    <td> <input type="button" value=" 0" /> </td>
-                </tr>
-                <tr>
-                    <td> <input type="button" value=" +" /> </td>
-                    <td> <input type="button" value=" -" /> </td>
-                    <td> <input type="button" value=" *" /> </td>
-                    <td> <input type="button" value=" /" /> </td>
-                    <td> <input type="button" value=" cc"> </td>
-                </tr>
+            </tr>
+            <tr>
+                <td> <input type="button" value=" 5" /> </td>
+                <td> <input type="button" value=" 6" /> </td>
+                <td> <input type="button" value=" 7" /> </td>
+                <td> <input type="button" value=" 8" /> </td>
 
-            </table>
-
-
-        </form>
-
+            </tr>
+            <tr>
+                <td> <input type="button" value=" 9" /> </td>
+                <td> <input type="button" value=" 0" /> </td>
+                <td> <input type="button" value=" +" /> </td>
+                <td> <input type="button" value=" -" /> </td>
+            </tr>
+            <tr>
+                <td> <input type="button" value=" *" /> </td>
+                <td> <input type="button" value=" /" /> </td>
+                <td> <input type="button" value=" =" /> </td>
+                <td> <input type="button" value=" cc"> </td>
+            </tr>
+        </table>
+        <span id="output">
+        </span>
     </div>
 
 
