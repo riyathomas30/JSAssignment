@@ -29,7 +29,7 @@ function implementforinLoop() {
     document.getElementById("forinLoopArray").innerHTML = '<br>FOR IN LOOP IN ARRAY<br><b>Key</b>\t<b>Value</b><br>' + dataarray;
 }
 function implementforofLoop() {
-    let detailsobj = { name: "Riya", partnername: "Thomas", location: "Mauritius", Designation: "Software Engineer" };
+    /*let detailsobj = { name: "Riya", partnername: "Thomas", location: "Mauritius", Designation: "Software Engineer" };
     let dataobj = '';
     for (let indexobj of detailsobj) {
 
@@ -37,7 +37,7 @@ function implementforofLoop() {
 
     }
     document.getElementById("forofLoopObject").innerHTML = '<br>FOR OF LOOP IN OBJECT<br>' + dataobj;
-
+    */
     let detailsarray = ["Riya", "Thomas", "Mauritius", "Software Engineer"];
     let dataarray = '';
     for (let indexarray of detailsarray) {
