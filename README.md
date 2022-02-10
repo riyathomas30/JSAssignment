@@ -1,0 +1,2 @@
+# JSAssignment
+Basic JS workout
