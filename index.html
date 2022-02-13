@@ -91,35 +91,21 @@
 
 
     <div class="calculator">
+
+        <input type="text" name="number1" id="number1" placeholder="Enter input1:" />
+        <input type="text" name="number2" id="number2" placeholder="Enter input2:" />
+
         <table>
             <tr>
-                <td> <input type="text" name="space" id="space" /></td>
             </tr>
-            <tr>
-                <td> <input type="button" value=" 1" class="btn" /></td>
-                <td> <input type="button" value=" 2" class="btn" /> </td>
-                <td> <input type="button" value=" 3" class="btn" /></td>
-                <td> <input type="button" value=" 4" class="btn" /> </td>
 
-            </tr>
             <tr>
-                <td> <input type="button" value=" 5" /> </td>
-                <td> <input type="button" value=" 6" /> </td>
-                <td> <input type="button" value=" 7" /> </td>
-                <td> <input type="button" value=" 8" /> </td>
 
-            </tr>
-            <tr>
-                <td> <input type="button" value=" 9" /> </td>
-                <td> <input type="button" value=" 0" /> </td>
-                <td> <input type="button" value=" +" /> </td>
-                <td> <input type="button" value=" -" /> </td>
-            </tr>
-            <tr>
-                <td> <input type="button" value=" *" /> </td>
-                <td> <input type="button" value=" /" /> </td>
-                <td> <input type="button" value=" =" /> </td>
-                <td> <input type="button" value=" cc"> </td>
+                <td> <input type="button" value=" +" onclick="calculate('+')" /> </td>
+                <td> <input type="button" value=" -" onclick="calculate('-')" /> </td>
+                <td> <input type="button" value=" *" onclick="calculate('*')" /> </td>
+                <td> <input type="button" value=" /" onclick="calculate('/')" /> </td>
+
             </tr>
         </table>
         <span id="output">

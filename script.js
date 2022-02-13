@@ -6,8 +6,9 @@ function myFunction() {
     let company = document.getElementById("company");
     alert(company.value);
     if (name.value && partnername.value && location.value && designation.value && company.value) {
-        //name = name.replace('+', ' ');
+
         document.getElementById("loginData").innerHTML = 'Hi I am ' + name.value + 'and my partners name is ' + partnername.value + ' . I stay in ' + location.value + ' .I am working as ' + designation.value + ' in ' + company.value;
+        //alert('hi');
     }
 }
 function implementforinLoop() {
@@ -36,8 +37,8 @@ function implementforofLoop() {
         dataobj += `${indexobj} = ${detailsobj[indexobj]}<br>`;
 
     }
-    document.getElementById("forofLoopObject").innerHTML = '<br>FOR OF LOOP IN OBJECT<br>' + dataobj;
-    */
+    document.getElementById("forofLoopObject").innerHTML = '<br>FOR OF LOOP IN OBJECT<br>' + dataobj;*/
+
     let detailsarray = ["Riya", "Thomas", "Mauritius", "Software Engineer"];
     let dataarray = '';
     for (let indexarray of detailsarray) {
@@ -74,29 +75,30 @@ function calculateArea() {
         document.getElementById("triangleArea").innerHTML = 'Area of the triangle :' + areaValue;
     }
 }
-/*function getQueryVariable(variable) {
-    let query = window.location.search.substring(1);
-    let vars = query.split("&");
-    for (let i = 0; i < vars.length; i++) {
-        let pair = vars[i].split("=");
-        if (pair[0] == variable) {
-            return pair[1];
-        }
-    }
-}*/
 
-function calculateValues() {
-    if (document.getElementsByClassName('btn').clicked == true) {
-        alert("button was clicked");
 
-        // let a = 
-        // alert(a);
+function calculate(value) {
+    let operator = value;
+    const number1 = document.getElementById('number1').value;
+    const number2 = document.getElementById('number2').value;
+    let result = '';
 
-        //let sideA = document.getElementsByTagName(HTMLButtonElement);
+    switch (operator) {
 
-        // alert(sideA);
-    }
+        case '*': result = number1 * number2; break;
+        case '+': result = Number(number1) + Number(number2); break;
+        case '-': result = number1 - number2; break;
+        case '/': result = number1 / number2; break;
+    };
+
+    document.getElementById("output").innerHTML = "Result is " + result;
 }
+
+
+
+
+
+
 
 
 
