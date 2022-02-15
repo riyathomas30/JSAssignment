@@ -77,7 +77,7 @@ function calculateArea() {
 }
 
 
-function calculate(value) {
+/*function calculate(value) {
     let operator = value;
     const number1 = document.getElementById('number1').value;
     const number2 = document.getElementById('number2').value;
@@ -92,7 +92,48 @@ function calculate(value) {
     };
 
     document.getElementById("output").innerHTML = "Result is " + result;
+}*/
+function getValue(value) {
+    document.getElementById("result").value += value;
 }
+function calculate() {
+
+
+    let result = document.getElementById("result").value;
+    let operator = result.split(/[^\s()*/%+-]+/);
+    let arr;
+    let operators = "/*+-^";
+    for (let i = 0; i < operators.length; i++) {
+        if (i == 0)
+            arr = result.split(operators[i]);
+
+        else
+            arr = arr.toString().split(operators[i]);
+    }
+    let numbers = arr[0].split(',');
+    let number1 = numbers[0];
+    let number2 = numbers[1];
+    let output;
+    switch (operator[1]) {
+        case '*': output = number1 * number2; break;
+        case '+': output = Number(number1) + Number(number2); break;
+        case '-': output = number1 - number2; break;
+        case '/': output = number1 / number2; break;
+
+    };
+    console.log(output);
+    document.getElementById("result").value = output;
+
+
+}
+function clearResult() {
+    document.getElementById("result").value = '';
+}
+
+
+
+
+
 
 
 

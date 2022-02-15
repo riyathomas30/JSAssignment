@@ -89,31 +89,65 @@
         <span id='triangleArea'> </span>
     </div>
 
-
     <div class="calculator">
-
-        <input type="text" name="number1" id="number1" placeholder="Enter input1:" />
-        <input type="text" name="number2" id="number2" placeholder="Enter input2:" />
-
+        <input type="text" name="result" id="result" disabled />
         <table>
             <tr>
+                <td> <input type="button" value=" 1" onclick="getValue('1')" /></td>
+                <td> <input type="button" value=" 2" onclick="getValue('2')" /> </td>
+                <td> <input type="button" value=" 3" onclick="getValue('3')" /></td>
+                <td> <input type="button" value=" 4" onclick="getValue('4')" /> </td>
+
             </tr>
-
             <tr>
+                <td> <input type="button" value=" 5" onclick="getValue('5')" /> </td>
+                <td> <input type="button" value=" 6" onclick="getValue('6')" /> </td>
+                <td> <input type="button" value=" 7" onclick="getValue('7')" /> </td>
+                <td> <input type="button" value=" 8" onclick="getValue('8')" /> </td>
 
-                <td> <input type="button" value=" +" onclick="calculate('+')" /> </td>
-                <td> <input type="button" value=" -" onclick="calculate('-')" /> </td>
-                <td> <input type="button" value=" *" onclick="calculate('*')" /> </td>
-                <td> <input type="button" value=" /" onclick="calculate('/')" /> </td>
-
+            </tr>
+            <tr>
+                <td> <input type="button" value=" 9" onclick="getValue('9')" /> </td>
+                <td> <input type="button" value=" 0" onclick="getValue('0')" /> </td>
+                <td> <input type="button" value=" +" onclick="getValue('+')" /> </td>
+                <td> <input type="button" value=" -" onclick="getValue('-')" /> </td>
+            </tr>
+            <tr>
+                <td> <input type="button" value=" *" onclick="getValue('*')" /> </td>
+                <td> <input type="button" value=" /" onclick="getValue('/')" /> </td>
+                <td> <input type="button" value=" =" onclick="calculate()" /> </td>
+                <td> <input type="button" value=" cc" onclick="clearResult()"> </td>
             </tr>
         </table>
-        <span id="output">
-        </span>
+
     </div>
 
+    <!--  <div class="calculator">
+
+           <input type="text" name="number1" id="number1" placeholder="Enter input1:" />
+           <input type="text" name="number2" id="number2" placeholder="Enter input2:" />
+
+           <table>
+               <tr>
+               </tr>
+
+               <tr>
+
+                   <td> <input type="button" value=" +" onclick="calculate('+')" /> </td>
+                   <td> <input type="button" value=" -" onclick="calculate('-')" /> </td>
+                   <td> <input type="button" value=" *" onclick="calculate('*')" /> </td>
+                   <td> <input type="button" value=" /" onclick="calculate('/')" /> </td>
+
+               </tr>
+           </table>
+           <span id="output">
+           </span>
+       </div>
 
 
+
+
+    -->
 
 
 
